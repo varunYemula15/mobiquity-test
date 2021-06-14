@@ -1,0 +1,48 @@
+.card-body {
+    background: #66657f;
+    color: #fff;
+    border-radius: 5px;
+    width: 300px;
+    height: 150px;
+    margin: 20px;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    .card-header {
+        height: 10%;
+        font-size: 12px;
+        margin: 12px;
+    }
+    .card-content {
+        height: 50%;
+        display: flex;
+        font-size: 12px;
+        margin: 5px 20px;
+        .weather-type {
+          margin: 0px 22px 0px 0px;
+            width: 60px;
+            position: relative;
+        }
+        .temperature{
+          font-size: 24px;
+          .description{
+            font-size: 12px;
+          }
+        }
+    }
+    .card-footer {
+        display: flex;
+        justify-content: center;
+        .full-forecast-button {
+            background: #706f87;
+            border-radius: 20px;
+            font-size: 12px;
+            width: fit-content;
+            padding: 2px 15px;
+        }
+    }
+    &:hover {
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    }
+}

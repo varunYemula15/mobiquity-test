@@ -1,0 +1,30 @@
+.detailed-container-body {
+    margin: 20px;
+    color: white;
+}
+
+.forecast-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+    color: white;
+    .forecast {
+        margin: 10px;
+        height: 200px;
+        width: 100%;
+        max-width: 200px;
+        background: #66657f;
+        border-radius: 10px;
+        .temperature {
+            font-size: 24px;
+            text-align: center;
+        }
+        .sea-level{
+          text-align: center;
+          .flood{
+            height: 30px;
+            margin-right: 4px;
+          }
+        }
+    }
+}

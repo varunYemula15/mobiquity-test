@@ -1,0 +1,22 @@
+<div class="card-body" (click)="navigateTo()">
+  <div class="card-header">{{city | uppercase}}, UK</div>
+  <div *ngIf="response" class="card-content">
+    <div>
+      <img class="weather-type" src="https://openweathermap.org/img/wn/{{response.weather[0].icon}}.png">
+    </div>
+    <div >
+      <div class="temperature">{{(response.main.temp - 273.15).toFixed(0)}}<span>&#176;</span>C
+        <span class="description">{{response.weather[0].description}}</span>
+       </div>
+      <div>Sun rise : {{response.sys.sunrise | getTimeFromTimestamp}} am</div>
+      <div>Sun set &nbsp;: {{response.sys.sunset| getTimeFromTimestamp}} pm</div>
+    </div>
+  </div>
+  <div class="card-footer">
+    <div class="full-forecast-button">See full forecast</div>
+  </div>
+</div>
+
+
+
+<!-- <img src="assets/weatherCard.png"> -->

@@ -1,0 +1,12 @@
+.app-body{
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  background: radial-gradient(#387989, #6dd5ed);
+  background-repeat: no-repeat;
+  position: absolute;
+  .title {
+    margin: 20px;
+    color: #fff;
+  }
+}
